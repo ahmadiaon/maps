@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Nova Bootstrap Template - Blog</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--These jQuery libraries for 
+           chosen need to be included-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css"
+    />
+
+    <!--These jQuery libraries for select2 
+            need to be included-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <!- web Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .marker {
+        background-image: url("assets/img/marker.png");
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        //Select2
+        $(".country").select2({
+          maximumSelectionLength: 2,
+        });
+        //Chosen
+        $(".country1").chosen({
+          max_selected_options: 2,
+        });
+      });
+    </script>
+  </head>
+
+  <body class="page-blog">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="d-flex align-items-center">Nova</h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Dropdown</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Dropdown</span>
+                    <i class="bi bi-chevron-down dropdown-indicator"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <div
+        class="breadcrumbs d-flex align-items-center"
+        style="background-image: url('assets/img/blog-header.jpg')"
+      >
+        <div
+          class="container position-relative d-flex flex-column align-items-center"
+        >
+          <h2>Blog</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Blog</li>
+          </ol>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog">
+        <div class="row md-20">
+          <div class="col-8">
+            <div class="container" data-aos="fade-up">
+              <div id="center">center</div>
+              <div
+                id="map"
+                style="
+                  width: 100%;
+                  height: 500px;
+                  border-radius: 10px;
+                  border: 1px solid orange;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <select
+              id="cars"
+              onchange="toMarkers(this)"
+              class="country"
+              style="width: 80%"
+              name="state"
+            ></select>
+            <div class="container" style="height: 300px">
+              <form>
+                <div class="form-group">
+                  <label for="latitute">Latitute</label>
+                  <input type="text" class="form-control" id="latitute" />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="longituted">longituted</label>
+                  <input type="text" class="form-control" id="longituted" />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="card">
+              <div class="footer-links">
+                <h4>Nearby Rekomendation</h4>
+                <ul id="nearby"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span>Nova</span>
+              </a>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                nada terra videa magna derita valies darta donna mare fermentum
+                iaculis eu non diam phasellus.
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bi bi-dash"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Nova</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
+            Designed by
+            <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoibWFwcy1hcGxpY2F0aW9uIiwiYSI6ImNsN3NncHkxajBoMWozcG92d2F5ZGNoZTkifQ.ZS3CFdr2lHEE3W5uvQzjuA";
+      var centerCoordinate = [113.91036333125942, -2.2099168524873676];
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: "mapbox://styles/mapbox/streets-v11", // style URL
+        center: centerCoordinate, // starting center in [lng, lat]
+        zoom: 13, // starting zoom
+        projection: "globe", // display map as a 3D globe
+      });
+      // console.log(map.getCenter().wrap());
+      map.on("style.load", function () {
+        map.on("click", function (e) {
+          var coordinates = e.lngLat;
+          new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML("you clicked here: <br/>" + coordinates)
+            .addTo(map);
+          document.getElementById("latitute").value = coordinates.lat;
+          document.getElementById("longituted").value = coordinates.lng;
+        });
+      });
+      map.on("move", function (e) {
+        document.getElementById("center").innerHTML = map
+          .getCenter()
+          .toString(); //zoom
+        var i = 0;
+        var center = map.getCenter();
+        var lat = center["lat"];
+        var lang = center["lng"];
+        console.log("lat :", lat);
+        document.getElementById("nearby").innerHTML = "";
+        for (const feature of featuress) {
+          // create a HTML element for each feature
+          var cod = feature.geometry.coordinates;
+          console.log("feature");
+          console.log(cod);
+          const el = document.createElement("li");
+          el.className = "marker";
+
+          // make a marker for each feature and add it to the map
+          new mapboxgl.Marker(el)
+            .setLngLat(feature.geometry.coordinates)
+            .setPopup(
+              new mapboxgl.Popup({ offset: 25 }) // add popups
+                .setHTML(
+                  `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+                )
+            )
+            .addTo(map);
+
+          // var x = document.getElementById("cars");
+          // var option = document.createElement("option");
+          // var coordinates = i;
+          // option.value = coordinates;
+          // option.setAttribute("onclick", "toMarkers();");
+          // option.text = feature.properties.title;
+          // x.add(option);
+
+          var from = turf.point([lang, lat]);
+          var to = turf.point([cod[0], cod[1]]);
+          var options = { units: "kilometers" };
+
+          var distance = turf.distance(from, to, options);
+          console.log(i);
+          console.log(distance);
+          if (distance < 4) {
+            var ul = document.getElementById("nearby");
+            var li = document.createElement("li");
+
+            var ii = document.createElement("i");
+            ii.classList.add("bi", "bi-dash");
+
+            var texta = document.createTextNode(feature.properties.title);
+            var aa = document.createElement("a");
+            aa.appendChild(texta);
+            aa.href = "#";
+            aa.setAttribute("onclick", "toMark(" + i + ");");
+
+            li.appendChild(ii);
+            li.appendChild(aa);
+            ul.appendChild(li);
+            //
+          }
+          i++;
+        }
+      });
+      let featuress = [
+        {
+          type: "Feature",
+          properties: {
+            // "marker-color": "#f76565",
+            title: "Anjing Udin",
+            // "marker-symbol": "restaurant",
+          },
+          geometry: {
+            // type: "Point",
+            coordinates: [113.89518001044064, -2.2192465933650283],
+          },
+        },
+        {
+          type: "Feature",
+          properties: {
+            // "marker-color": "#f76565",
+            title: "Kucing Udin",
+            // "marker-symbol": "restaurant",
+          },
+          geometry: {
+            // type: "Point",
+            coordinates: [113.92553897303208, -2.201525949482445],
+          },
+        },
+        {
+          type: "Feature",
+          properties: {
+            // "marker-color": "#f76565",
+            title: "Babi Udin",
+            // "marker-symbol": "restaurant",
+          },
+          geometry: {
+            // type: "Point",
+            coordinates: [113.88637726719276, -2.2198082101560175],
+          },
+        },
+        {
+          type: "Feature",
+          properties: {
+            // "marker-color": "#f76565",
+            title: "Bank Indonesia",
+            // "marker-symbol": "restaurant",
+          },
+          geometry: {
+            // type: "Point",
+            coordinates: [113.9272479737856, -2.219121822826537],
+          },
+        },
+      ];
+      /*
+       // first coordinate in features
+
+            // set bounds according to features
+            // map.fitBounds(bounds, {
+            //   padding: 50,
+            //   maxZoom: 14.15,
+            //   duration: 5000,
+            // });
+
+            // ini tanda,
+            // const geojson = {
+            //   type: "FeatureCollection",
+            //   features: [
+            //     {
+            //       type: "Feature",
+            //       geometry: {
+            //         type: "Point",
+            //         coordinates: [113.88668595723811, -2.197786888526963],
+            //       },
+            //       properties: {
+            //         title: "udin 1",
+            //         description: "San Francisco, California",
+            //       },
+            //     },
+            //     {
+            //       type: "Feature",
+            //       geometry: {
+            //         type: "Point",
+            //         coordinates: [113.92490519970056, -2.1999570763097296],
+            //       },
+            //       properties: {
+            //         title: "BANK INDONESIA",
+            //         description: "Bank Indonesia.",
+            //       },
+            //     },
+            //     {
+            //       type: "Feature",
+            //       geometry: {
+            //         type: "Point",
+            //         coordinates: [113.88637726719276, -2.2198082101560175],
+            //       },
+            //       properties: {
+            //         title: "BRI",
+            //         description: "Bank Rakyat Indonesia",
+            //       },
+            //     },
+            //     {
+            //       type: "Feature",
+            //       geometry: {
+            //         type: "Point",
+            //         coordinates: [113.9272479737856, -2.219121822826537],
+            //       },
+            //       properties: {
+            //         title: "BNI",
+            //         description: "Bank Nasional Indonesia.",
+            //       },
+            //     },
+            //   ],
+            // };
+      */
+
+      console.log("here i am");
+      var i = 0;
+      for (const feature of featuress) {
+        // create a HTML element for each feature
+        var cod = feature.geometry.coordinates;
+        // console.log("udiiiiin:");
+        // console.log(cod[1]);
+        const el = document.createElement("li");
+        el.className = "marker";
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+
+        var x = document.getElementById("cars");
+        var option = document.createElement("option");
+        var coordinates = i;
+        option.value = coordinates;
+        option.setAttribute("onclick", "toMark(" + coordinates + ");");
+        option.text = feature.properties.title;
+        x.add(option);
+
+        var ul = document.getElementById("nearby");
+        var li = document.createElement("li");
+
+        var text = document.createTextNode(feature.properties.title);
+        var ii = document.createElement("i");
+        ii.classList.add("bi", "bi-dash");
+
+        var texta = document.createTextNode(feature.properties.title);
+        var aa = document.createElement("a");
+        aa.appendChild(texta);
+        aa.href = "#";
+        aa.setAttribute("onclick", "toMark(" + coordinates + ");");
+
+        li.appendChild(ii);
+        li.appendChild(aa);
+        ul.appendChild(li);
+
+        var from = turf.point([centerCoordinate[0], centerCoordinate[1]]);
+        var to = turf.point([cod[0], cod[1]]);
+        var options = { units: "kilometers" };
+
+        var distance = turf.distance(from, to, options);
+        console.log(distance);
+        i++;
+      }
+
+      function toMarker() {
+        let fet = featuress[1];
+        console.log(fet.type);
+        let features = [fet];
+        console.log(features);
+
+        let co = features[0].geometry.coordinates;
+        var langs = 113.88668595723811;
+        var lats = 2.197786888526963;
+        // we want to determine the bounds for the features data
+        let bounds = features.reduce((bounds, feature) => {
+          return bounds.extend(feature.geometry.coordinates);
+        }, new mapboxgl.LngLatBounds(langs.lng, lats.lat));
+
+        map.fitBounds(bounds, {
+          padding: 50,
+          maxZoom: 14.15,
+          duration: 1000,
+        });
+        new mapboxgl.Marker(fet)
+          .setLngLat(fet.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${fet.properties.title}</h3><p>${fet.properties.title}</p>`
+              )
+          )
+          .addTo(map);
+      }
+
+      function toMarkers(vars) {
+        // console.log(vars.value);
+        var ind = parseInt(vars.value);
+        let fet = featuress[ind];
+        // console.log(fet);
+        let features = [fet];
+
+        let co = featuress[ind].geometry.coordinates;
+
+        let bounds = features.reduce((bounds, feature) => {
+          return bounds.extend(feature.geometry.coordinates);
+        }, new mapboxgl.LngLatBounds(co.lng, co.lat));
+
+        map.fitBounds(bounds, {
+          padding: 50,
+          maxZoom: 14.15,
+          duration: 1000,
+        });
+        new mapboxgl.Marker(fet)
+          .setLngLat(fet.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${fet.properties.title}</h3><p>${fet.properties.title}</p>`
+              )
+          )
+          .addTo(map);
+      }
+      function toMark(vars) {
+        // console.log(vars.value);
+        var ind = parseInt(vars);
+        let fet = featuress[ind];
+        // console.log(fet);
+        let features = [fet];
+
+        let co = featuress[ind].geometry.coordinates;
+
+        let bounds = features.reduce((bounds, feature) => {
+          return bounds.extend(feature.geometry.coordinates);
+        }, new mapboxgl.LngLatBounds(co.lng, co.lat));
+
+        map.fitBounds(bounds, {
+          padding: 50,
+          maxZoom: 14.15,
+          duration: 1000,
+        });
+        new mapboxgl.Marker(fet)
+          .setLngLat(fet.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${fet.properties.title}</h3><p>${fet.properties.title}</p>`
+              )
+          )
+          .addTo(map);
+      }
+
+      // Add geolocate control to the map.
+      map.addControl(
+        new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true,
+          },
+          // When active the map will receive updates to the device's location as it changes.
+          trackUserLocation: true,
+          // Draw an arrow next to the location dot to indicate which direction the device is heading.
+          showUserHeading: true,
+        })
+      );
+    </script>
+    <!- web Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
